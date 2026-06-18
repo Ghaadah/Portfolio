@@ -1,0 +1,349 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Portfolio of Raghad Al Musawi — Information Systems, Power Platform, AI, and Data Engineering.">
+  <title>Portfolio — Raghad Al Musawi</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300;0,9..144,500;1,9..144,300&family=Plus+Jakarta+Sans:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- ─── Nav ──────────────────────────────── -->
+  <nav class="site-nav">
+    <a href="index.html" class="nav-logo">R.A</a>
+    <div class="nav-right">
+      <div class="nav-links">
+        <a href="index.html">Home</a>
+        <a href="#irco">IRCO Work</a>
+        <a href="#projects">Projects</a>
+        <a href="#experience">Experience</a>
+      </div>
+      <div style="display:flex;align-items:center;gap:1rem;">
+        <a href="https://www.linkedin.com/in/raghad-al-musawi-6624b6b0/" target="_blank" class="nav-icon" aria-label="LinkedIn">
+          <svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></svg>
+        </a>
+        <a href="https://github.com/ghaadah" target="_blank" class="nav-icon" aria-label="GitHub">
+          <svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/></svg>
+        </a>
+        <button class="theme-btn" onclick="toggleTheme()" aria-label="Toggle theme">
+          <span class="t-icon">☀</span>
+          <span class="t-label">Light</span>
+        </button>
+      </div>
+    </div>
+  </nav>
+
+  <!-- ─── Hero ──────────────────────────────── -->
+  <header class="port-hero">
+    <canvas id="hero-canvas"></canvas>
+    <div class="hero-inner">
+      <p class="eyebrow">Senior Information Systems Specialist &nbsp;·&nbsp; Portland, OR</p>
+      <h1>Raghad<br><em>Al Musawi</em></h1>
+      <p class="hero-sub">Building intelligent enterprise systems with a human-centered approach — where technology meets real community impact.</p>
+      <div class="btn-row">
+        <a href="#irco" class="btn btn-solid">See IRCO work →</a>
+        <a href="https://mail.google.com/mail/?view=cm&fs=1&to=raghad.musawi@gmail.com&su=Hello%20from%20your%20portfolio" target="_blank" class="btn btn-ghost">Get in touch</a>
+      </div>
+    </div>
+  </header>
+
+  <!-- ─── About ─────────────────────────────── -->
+  <section class="section" id="about">
+    <p class="sec-label">About me</p>
+    <div class="about-grid">
+      <div class="about-body">
+        <p>I am a systems specialist with over eight years of experience building enterprise solutions at IRCO — the Immigrant and Refugee Community Organization in Portland, Oregon. My work sits at the intersection of people and technology: designing Power Platform applications, automating workflows, and delivering data insights that serve communities in need.</p>
+        <p>I recently completed my Master of Science in Computer Science at Portland State University (June 2026), expanding into artificial intelligence and machine learning — building RAG systems, LLM pipelines, and cloud data engineering solutions on Google Cloud Platform.</p>
+        <p>I also serve as a Teaching Assistant at PSU across three courses, supporting students in web development, robust software design, and introductory computer science.</p>
+      </div>
+      <div class="stats">
+        <div class="stat">
+          <div class="stat-num">8+</div>
+          <div class="stat-lbl">Years of industry experience</div>
+        </div>
+        <div class="stat">
+          <div class="stat-num">MS</div>
+          <div class="stat-lbl">Computer Science, PSU — June 2026</div>
+        </div>
+        <div class="stat">
+          <div class="stat-num">IRCO</div>
+          <div class="stat-lbl">Senior IS Specialist</div>
+        </div>
+        <div class="stat">
+          <div class="stat-num">3× TA</div>
+          <div class="stat-lbl">Web Dev, Robust Design &amp; Intro CS</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ─── Skills ─────────────────────────────── -->
+  <section class="section reveal" id="skills">
+    <p class="sec-label">Skills</p>
+    <div class="skills-wrap">
+      <div>
+        <div class="skill-cat">Power Platform &amp; Microsoft 365</div>
+        <div class="badges">
+          <span class="badge">Power Apps (Canvas)</span>
+          <span class="badge">Power Automate</span>
+          <span class="badge">Power BI</span>
+          <span class="badge">SharePoint</span>
+          <span class="badge">Teams</span>
+          <span class="badge">OneDrive</span>
+          <span class="badge">Outlook</span>
+        </div>
+      </div>
+      <div>
+        <div class="skill-cat">Data &amp; integration</div>
+        <div class="badges">
+          <span class="badge">SQL</span>
+          <span class="badge">Apricot360</span>
+          <span class="badge">ETO — Efforts to Outcome</span>
+          <span class="badge">REST APIs</span>
+          <span class="badge">JSON / XML</span>
+          <span class="badge">Custom Reporting</span>
+          <span class="badge">Data Quality Assurance</span>
+        </div>
+      </div>
+      <div>
+        <div class="skill-cat">Programming &amp; development</div>
+        <div class="badges">
+          <span class="badge">JavaScript</span>
+          <span class="badge">React</span>
+          <span class="badge">Node.js</span>
+          <span class="badge">Python</span>
+          <span class="badge">C / C++</span>
+          <span class="badge">HTML / CSS</span>
+        </div>
+      </div>
+      <div>
+        <div class="skill-cat">AI &amp; cloud</div>
+        <div class="badges">
+          <span class="badge">LLM Agents</span>
+          <span class="badge">RAG Systems</span>
+          <span class="badge">ChromaDB</span>
+          <span class="badge">DSPy</span>
+          <span class="badge">MCP</span>
+          <span class="badge">Google Cloud</span>
+        </div>
+      </div>
+      <div>
+        <div class="skill-cat">Other</div>
+        <div class="badges">
+          <span class="badge">UI/UX Design</span>
+          <span class="badge">Git</span>
+          <span class="badge">Docker</span>
+          <span class="badge">Linux</span>
+          <span class="badge">Machine Learning</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ─── IRCO Enterprise Work ─────────────── -->
+  <section class="section reveal" id="irco">
+    <p class="sec-label">Enterprise work at IRCO</p>
+    <p class="section-intro">
+      Over eight years at the Immigrant and Refugee Community Organization building Power Apps solutions,
+      automating workflows, managing Apricot360 and ETO databases, and delivering data tools that serve
+      Portland's immigrant and refugee communities.
+    </p>
+    <div class="projects-grid">
+
+      <div class="proj-card featured">
+        <div class="card-tag">Power Apps &nbsp;·&nbsp; SharePoint &nbsp;·&nbsp; Power Automate</div>
+        <h3>Organization Power Apps Solutions</h3>
+        <p>Designed, developed, and deployed enterprise Power Apps solutions integrated with SharePoint and Power Automate to streamline workflows across multiple departments throughout the organization.</p>
+      </div>
+
+      <div class="proj-card featured">
+        <div class="card-tag">Power Apps &nbsp;·&nbsp; Power Automate</div>
+        <h3>Referral System App</h3>
+        <p>Developed and implemented a referral management app using multiple lookup lists. Includes automated approval and rejection flows via email and Teams notifications, with reassignment functionality for complex cases.</p>
+      </div>
+
+      <div class="proj-card featured">
+        <div class="card-tag">Power Apps</div>
+        <h3>Developer Dashboard</h3>
+        <p>Built a centralized dashboard to track and manage all Power Apps across the organization — providing a single view of app status, ownership, last modified dates, and environment details to support proactive maintenance and identify unused or outdated apps.</p>
+      </div>
+
+      <div class="proj-card featured">
+        <div class="card-tag">Power Apps &nbsp;·&nbsp; In Progress</div>
+        <h3>Dynamic Multi-Database Power App</h3>
+        <p>Currently developing a Canvas App that connects to multiple databases through a single app instance. The app adapts based on the selected data source, reducing maintenance overhead and scaling across departments with minimal code duplication.</p>
+      </div>
+
+      <div class="proj-card featured">
+        <div class="card-tag">Power Apps &nbsp;·&nbsp; Power Automate</div>
+        <h3>Helpdesk Ticketing System</h3>
+        <p>Built a staff-facing Helpdesk App for submitting IT and operations requests, plus a complementary Manager App for assignment, tracking, and resolution. Integrated in-app feedback to gather user input and drive iterative improvements.</p>
+      </div>
+
+      <div class="proj-card featured">
+        <div class="card-tag">Power Apps</div>
+        <h3>Programs at a Glance App</h3>
+        <p>Developed an app providing staff with advanced filtering and search capabilities across all IRCO programs, improving accessibility to program information organization-wide.</p>
+      </div>
+
+      <div class="proj-card featured">
+        <div class="card-tag">Power Apps &nbsp;·&nbsp; Apricot360</div>
+        <h3>Case Management App</h3>
+        <p>Built an app to manage client enrollment, case notes, and reporting — including downloadable PDF reports for documentation. Integrated with Apricot360 for data workflows and compliance tracking.</p>
+      </div>
+
+      <div class="proj-card featured">
+        <div class="card-tag">Power Apps &nbsp;·&nbsp; SharePoint</div>
+        <h3>Role-Based Access &amp; Navigation</h3>
+        <p>Configured security groups and permissions across apps, including view-only access for specific groups. Created dynamic navigation menus so users see only the pages relevant to their role, keeping admin pages hidden from non-admins.</p>
+      </div>
+
+      <div class="proj-card featured">
+        <div class="card-tag">Power Platform &nbsp;·&nbsp; ALM</div>
+        <h3>Development Lifecycle Management</h3>
+        <p>Implemented a Dev → Test → Production deployment workflow using multiple Power Platform environments and managed solution exports — bringing professional ALM practices to IRCO's application development process.</p>
+      </div>
+
+      <div class="proj-card featured">
+        <div class="card-tag">Apricot360 &nbsp;·&nbsp; ETO &nbsp;·&nbsp; SQL</div>
+        <h3>Data Management &amp; Analysis</h3>
+        <p>Built and managed program databases in Apricot360 and ETO (Efforts to Outcome). Created complex SQL queries to extract, transform, and analyze data from multiple sources for reporting and grant compliance.</p>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ─── Academic &amp; Research Projects ───── -->
+  <section class="section reveal" id="projects">
+    <p class="sec-label">Academic &amp; research projects</p>
+    <div class="projects-grid">
+
+      <div class="proj-card">
+        <div class="card-tag">AI &nbsp;·&nbsp; Cloud &nbsp;·&nbsp; MCP</div>
+        <h3>City Navigation Assistant</h3>
+        <p>A conversational navigation agent using the Model Context Protocol and Google Maps API, deployed on Google Cloud Run. Built for CS 430 Internet, Web &amp; Cloud.</p>
+      </div>
+
+      <div class="proj-card">
+        <div class="card-tag">AI &nbsp;·&nbsp; RAG &nbsp;·&nbsp; LLM</div>
+        <h3>Pharma RAG System</h3>
+        <p>A pharmaceutical knowledge retrieval system using ChromaDB, SentenceTransformers, FDA drug PDFs, and Gemini/Claude APIs with DSPy-based optimization for accurate drug information retrieval.</p>
+      </div>
+
+      <div class="proj-card">
+        <div class="card-tag">AI Safety &nbsp;·&nbsp; Research</div>
+        <h3>Gender Bias in LLMs</h3>
+        <p>Analyzed gender bias in Gemma-2-2b using Sparse Autoencoders via Neuronpedia, measuring differential feature activation across gendered professions in four languages including English, French, and Chinese.</p>
+      </div>
+
+      <div class="proj-card">
+        <div class="card-tag">Data Engineering &nbsp;·&nbsp; GCP</div>
+        <h3>TriMet Stop Event Pipeline</h3>
+        <p>Parallel data ingestion on GCP collecting TriMet StopEvent data alongside a BreadCrumb GPS stream — three systemd services, Pub/Sub messaging, and three-day automated data collection.</p>
+      </div>
+
+      <div class="proj-card">
+        <div class="card-tag">Security &nbsp;·&nbsp; GenAI</div>
+        <h3>Prompt Injection Research</h3>
+        <p>Security analysis of prompt injection vulnerabilities against the Pharma RAG system, exploring attack vectors, jailbreaking methods, and mitigations. Presented for CS 475 Generative Security.</p>
+      </div>
+
+      <div class="proj-card">
+        <div class="card-tag">LLM Agents &nbsp;·&nbsp; Travel</div>
+        <h3>Travel Brochure Generator</h3>
+        <p>An LLM-powered travel brochure generation system producing personalized destination content — built for CS 410/510 LLM Agents using structured prompting and multi-model pipelines.</p>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ─── Experience ─────────────────────────── -->
+  <section class="section reveal" id="experience">
+    <p class="sec-label">Experience</p>
+    <div class="exp-list">
+
+      <div class="exp-item">
+        <div class="exp-period">May 2022 — present</div>
+        <div>
+          <div class="exp-role">Senior Information Systems Specialist</div>
+          <div class="exp-org">IRCO — Immigrant and Refugee Community Organization, Portland OR</div>
+          <div class="exp-desc">Designing, developing, and deploying Power Apps canvas solutions integrated with SharePoint and Power Automate. Managing Apricot360 and ETO databases, building SQL reports, implementing Dev → Test → Production deployment workflows, and authoring user documentation and training sessions for staff across the organization.</div>
+        </div>
+      </div>
+
+      <div class="exp-item">
+        <div class="exp-period">Jul 2017 — May 2022</div>
+        <div>
+          <div class="exp-role">Database and Training Specialist</div>
+          <div class="exp-org">IRCO — Immigrant and Refugee Community Organization, Portland OR</div>
+          <div class="exp-desc">Maintained data accuracy and consistency across systems, built dashboards and reports using HTML and SQL, tested applications and created QA use cases, and led training sessions helping staff effectively use database tools and reporting features.</div>
+        </div>
+      </div>
+
+      <div class="exp-item">
+        <div class="exp-period">Spring 2026</div>
+        <div>
+          <div class="exp-role">Teaching Assistant — CS 463/563 Web Development</div>
+          <div class="exp-org">Portland State University &nbsp;·&nbsp; Prof. Caterina Paun</div>
+          <div class="exp-desc">Graded student portfolio projects and GitHub Pages sites with structured rubric-based feedback, and supported students through HTML, CSS, and JavaScript fundamentals.</div>
+        </div>
+      </div>
+
+      <div class="exp-item">
+        <div class="exp-period">Fall 2026</div>
+        <div>
+          <div class="exp-role">Teaching Assistant — Robust Design for Software</div>
+          <div class="exp-org">Portland State University &nbsp;·&nbsp; Prof. Daniel Leblanc</div>
+          <div class="exp-desc">Supported a graduate-level course on software reliability and design principles. Graded assignments and facilitated discussion on fault tolerance, system durability, and building dependable software.</div>
+        </div>
+      </div>
+
+      <div class="exp-item">
+        <div class="exp-period">Winter 2026</div>
+        <div>
+          <div class="exp-role">Teaching Assistant — CS 161/162 Intro to CS</div>
+          <div class="exp-org">Portland State University &nbsp;·&nbsp; Prof. Stephanie Allen</div>
+          <div class="exp-desc">Supported introductory CS courses, set up and managed a Discord community for peer support, and handled course communications.</div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ─── Contact ────────────────────────────── -->
+  <div class="contact-wrap reveal">
+    <h2>Let's build something together.</h2>
+    <p>Open to new opportunities in systems analysis, Power Platform development, and AI-enabled enterprise solutions.</p>
+    <div class="btn-row" style="justify-content:center;margin-bottom:2rem;">
+      <a href="https://mail.google.com/mail/?view=cm&fs=1&to=raghad.musawi@gmail.com&su=Hello%20from%20your%20portfolio" target="_blank" class="btn btn-solid">Say hello →</a>
+      <a href="https://www.linkedin.com/in/raghad-al-musawi-6624b6b0/" target="_blank" class="btn btn-ghost">LinkedIn ↗</a>
+      <a href="https://github.com/ghaadah" target="_blank" class="btn btn-ghost">GitHub ↗</a>
+    </div>
+  </div>
+
+  <footer>
+    <a href="index.html" class="nav-logo" style="font-size:16px;">R.A</a>
+    <p>Raghad Al Musawi &nbsp;·&nbsp; Portland, Oregon &nbsp;·&nbsp; 2026</p>
+    <div style="display:flex;gap:1.25rem;align-items:center;">
+      <a href="https://mail.google.com/mail/?view=cm&fs=1&to=raghad.musawi@gmail.com&su=Hello%20from%20your%20portfolio" target="_blank" style="font-size:12px;color:var(--faint);transition:color 0.2s;" onmouseover="this.style.color='var(--gold)'" onmouseout="this.style.color='var(--faint)'">raghad.musawi@gmail.com</a>
+      <a href="https://www.linkedin.com/in/raghad-al-musawi-6624b6b0/" target="_blank" class="nav-icon" aria-label="LinkedIn">
+        <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></svg>
+      </a>
+      <a href="https://github.com/ghaadah" target="_blank" class="nav-icon" aria-label="GitHub">
+        <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/></svg>
+      </a>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+  <script>
+    startConstellation('hero-canvas', { count: 38, maxDist: 110, speed: 0.18 });
+    initScrollReveal();
+  </script>
+
+</body>
+</html>
